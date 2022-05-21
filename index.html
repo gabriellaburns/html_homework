@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>homework</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- D3 Library -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+</head>
+
+
+<body style="background-color:#2aabe4;">
+
+  <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-transparent">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item py-3 " href="temperature.html">Temperature</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="windiness.html">Wind Speed</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="card card mt-4 text-white border-0"style="background-color:#2aabe4;">
+      <h1 class="card-title display-4" style="color:#fdfd96;">WeatherPy Analysis</h1>
+       <!-- Our CSS<p class="display-6">WeatherPy Analysis</p> ---->
+      <p>Our WeatherPy class assignment gave us the opportunity to analyze various climate barometers (see what I did there?)
+        based on their relationship to lattitude. There were some surpises;I thought cloudiness and lattitude would show a strong relationship, but they did not. 
+        If you liked that surface level analysis, please click on the images below to view more in depth analysis I did as part of this assignment!
+        If you'd like to see the process by which I obtained this data and created the images below, please If you'd like to see my github page where I used an API to pull and manipulate this data, please <a href="https://github.com/gabriellaburns/python-api-challenge.git">click here</a> to see my github!
+      </p>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="card card mt-4 text-white border-0"style="background-color:#2aabe4;">
+      <h1 class="card-title display-4" style="color:#fdfd96;"">Images</h1>
+    </div>
+  </div>  
+  <div class="container-fluid">
+    <div class="row lg-row align-items-center">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <div class="card mt-4">
+          <a target="__blank" href="cloudiness.html">
+            <img  class="card-img-top" src="graphics\cloud.png" alt="{{clouds}}" class="img-thumbnail" loading="lazy">
+          </a>
+        <h1 class="card-title display-4  text-center text-white"style="color:#666b6e;">Cloudiness</h1>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> 
+        <div class="card mt-4">
+          <a target="__blank" href="temperature.html">
+            <img  class="card-img-top" src="graphics\temp.png" class="img-thumbnail" loading="lazy">
+          </a>
+          <h1 class="card-title display-4  text-center text-white"style="color:#666b6e;">Temperature</h1>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> 
+        <div class="card mt-4">
+          <a target="__blank" href="humidity.html">
+            <img  class="card-img-top" src="graphics\hum.png" alt="{{ hem.title }}" class="img-thumbnail" loading="lazy">
+          </a>
+          <h1 class="card-title display-4  text-center text-white"style="color:#666b6e;">Humidity</h1>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> 
+        <div class="card mt-4">
+          <a target="__blank" href="windiness.html">
+            <img  class="card-img-top" src="graphics\wind.png" class="img-thumbnail" loading="lazy">
+          </a>
+          <h1 class="card-title display-4  text-center text-white"style="color:#666b6e;">Wind Speed</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- CHARTS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
